@@ -1,0 +1,14 @@
+*{
+    font-family: 'Karla', sans-serif;
+}
+body{
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+}
+body, main{
+    display: flex;
+    flex-direction: column;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

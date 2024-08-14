@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Contact form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <main>
+    <div id="nome">
+      <label for="fNome">First Name</label>
+      <input type="text" name="fNome" id="fNome" required>
+      <!-- This field is required -->
+
+      <label for="lNome">Last Name</label>
+      <input type="text" name="lNome" id="lNome" required>
+      <!-- This field is required -->
+    </div>
+
+    <label for="Email">Email Address</label>
+    <input type="email" name="Email" id="Email">
+    <!-- Please enter a valid email address
+    This field is required -->
+
+    <label>Query Type</label>
+    General Enquiry
+    Support Request
+    <!-- Please select a query type -->
+
+    <label for="texto">Message</label>
+    <textarea name="texto" id="texto"></textarea>
+    <!-- This field is required -->
+ 
+    <input type="checkbox" name="" id="">I consent to being contacted by the team
+    <!-- To submit this form, please consent to being contacted -->
+
+    <button>Submit</button>
+  </main>
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LuisEduardoDev1">@LuisEduardoDev1</a>.
+  </div>
+</body>
+</html>
