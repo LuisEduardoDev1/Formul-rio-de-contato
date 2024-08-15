@@ -1,14 +1,75 @@
 *{
     font-family: 'Karla', sans-serif;
 }
+
 body{
     justify-content: center;
     margin: 0 auto;
     width: 60%;
+    background-color: hsl(148, 38%, 91%);
 }
-body, main{
+
+body, form, #nome div{
     display: flex;
     flex-direction: column;
 }
+
+main{
+    margin-top: 50px;
+    padding: 0px 30px 30px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+label{
+    font-size: 14px;
+}
+
+input{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: solid 1px hsl(186, 15%, 59%);
+}
+
+button{
+    padding: 10px;
+}
+
+#nome{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#nome div{
+    width: 50%;
+}
+
+#escolha{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.escolha{
+    border: solid 1px hsl(186, 15%, 59%);
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.escolha input{
+    margin: 10px 0px 10px 15px;
+}
+
+textarea{
+    margin-top: 5px;
+    resize: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: solid 1px hsl(186, 15%, 59%);
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

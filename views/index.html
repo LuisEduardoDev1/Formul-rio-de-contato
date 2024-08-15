@@ -12,40 +12,59 @@
 </head>
 <body>
 
-  <h1>Contact Us</h1>
-
   <main>
-    <div id="nome">
-      <label for="fNome">First Name</label>
-      <input type="text" name="fNome" id="fNome" required>
+    <h1>Contact Us</h1>
+    <form action="">
+
+      <div id="nome">
+        <div>
+          <label for="fNome">First Name</label>
+          <input type="text" name="fNome" id="fNome" required>
+        </div>
+        <!-- This field is required -->
+        
+        <div>
+          <label for="lNome">Last Name</label>
+          <input type="text" name="lNome" id="lNome" required>
+        </div>
+        <!-- This field is required -->
+      </div>
+
+      <label for="Email">Email Address</label>
+      <input type="email" name="Email" id="Email">
+      <!-- Please enter a valid email address
+      This field is required -->
+      
+      <label>Query Type</label>
+      <div id="escolha">
+        <div class="escolha">
+          <input type="radio" name="queryType" value="General">
+          General Enquiry
+        </div>
+        <div class="escolha">
+          <input type="radio" name="queryType" value="Support">
+          Support Request
+        </div>
+      </div>
+      <!-- Please select a query type -->   
+
+      <label for="texto">Message</label>
+      <textarea name="texto" id="texto" cols="10" rows="4"></textarea>
       <!-- This field is required -->
 
-      <label for="lNome">Last Name</label>
-      <input type="text" name="lNome" id="lNome" required>
-      <!-- This field is required -->
-    </div>
+      <label for="">
+        <input type="checkbox">
+        I consent to being contacted by the team
+      </label>
+      <!-- To submit this form, please consent to being contacted -->
 
-    <label for="Email">Email Address</label>
-    <input type="email" name="Email" id="Email">
-    <!-- Please enter a valid email address
-    This field is required -->
+      <button>Submit</button>
 
-    <label>Query Type</label>
-    General Enquiry
-    Support Request
-    <!-- Please select a query type -->
-
-    <label for="texto">Message</label>
-    <textarea name="texto" id="texto"></textarea>
-    <!-- This field is required -->
- 
-    <input type="checkbox" name="" id="">I consent to being contacted by the team
-    <!-- To submit this form, please consent to being contacted -->
-
-    <button>Submit</button>
+    </form>
   </main>
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+
+  <!-- Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
