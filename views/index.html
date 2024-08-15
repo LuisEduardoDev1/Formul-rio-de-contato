@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
   
   <title>Contact form</title>
 
@@ -19,41 +19,41 @@
       <div id="nome">
         <div>
           <label for="fNome">First Name</label>
-          <input type="text" name="fNome" id="fNome" required>
+          <input type="text" name="fNome" id="fNome" required class="campos">
         </div>
         <!-- This field is required -->
         
         <div>
           <label for="lNome">Last Name</label>
-          <input type="text" name="lNome" id="lNome" required>
+          <input type="text" name="lNome" id="lNome" required class="campos">
         </div>
         <!-- This field is required -->
       </div>
 
       <label for="Email">Email Address</label>
-      <input type="email" name="Email" id="Email">
+      <input type="email" name="Email" id="Email" class="campos" required>
       <!-- Please enter a valid email address
       This field is required -->
       
       <label>Query Type</label>
-      <div id="escolha">
-        <div class="escolha">
-          <input type="radio" name="queryType" value="General">
+      <div id="escolha" for="General">
+        <label class="escolha"> 
+          <input type="radio" name="queryType" id="General">
           General Enquiry
-        </div>
-        <div class="escolha">
-          <input type="radio" name="queryType" value="Support">
+        </label>
+        <label class="escolha" for="Support">
+          <input type="radio" name="queryType" id="Support">
           Support Request
         </div>
       </div>
       <!-- Please select a query type -->   
 
       <label for="texto">Message</label>
-      <textarea name="texto" id="texto" cols="10" rows="4"></textarea>
+      <textarea name="texto" id="texto" rows="4"></textarea>
       <!-- This field is required -->
 
-      <label for="">
-        <input type="checkbox">
+      <label for="check">
+        <input type="checkbox" id="check">
         I consent to being contacted by the team
       </label>
       <!-- To submit this form, please consent to being contacted -->
@@ -67,8 +67,10 @@
   Thanks for completing the form. We'll be in touch soon! -->
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. <br>
     Coded by <a href="https://github.com/LuisEduardoDev1">@LuisEduardoDev1</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
