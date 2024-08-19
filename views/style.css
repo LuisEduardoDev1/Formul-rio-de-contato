@@ -27,10 +27,12 @@ label{
 }
 
 input{
-    margin-bottom: 15px;
     margin-top: 5px;
     border: solid 1px hsl(186, 15%, 59%);
     border-radius: 7px;
+}
+input:hover{
+    cursor: pointer;
 }
 
 .campos{
@@ -42,7 +44,8 @@ button{
     background-color: hsl(169, 82%, 27%);
     color: white;
     border: 0px;
-    border-radius: 7px
+    border-radius: 7px;
+    margin-top: 15px;
 }
 button:hover{
     cursor: pointer;
@@ -55,7 +58,7 @@ button:hover{
 }
 
 #nome div{
-    width: 50%;
+    width: 100%;
 }
 
 #escolha{
@@ -64,24 +67,58 @@ button:hover{
     align-items: center;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 0px;
 }
 .escolha{
     border: solid 1px hsl(186, 15%, 59%);
     border-radius: 7px;
     width: 50%;
-    margin-bottom: 15px;
     margin-top: 5px;
 }
 .escolha input{
     margin: 10px 0px 10px 15px;
 }
+.escolha:hover{
+    cursor: pointer;
+}
+#query{
+    margin-bottom: 15px;
+}
 
 textarea{
     margin-top: 5px;
     resize: none;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     border-radius: 7px;
     border: solid 1px hsl(186, 15%, 59%);
+}
+
+#check{
+    margin-top: 15px;
+}
+
+.nomeEult{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.nomeEult input{
+    margin-bottom: 0px;
+}
+
+.error{
+    color: hsl(0, 66%, 54%);
+    font-size: 12px;
+}
+
+#divEmail{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#divEmail input{
+    margin-bottom: 0px;
 }
 
 .attribution { 
@@ -91,4 +128,11 @@ textarea{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+
+@media(max-width: 700px){
+    body{
+        width: 85%;
+    }
 }

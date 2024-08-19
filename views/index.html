@@ -14,51 +14,57 @@
 
   <main>
     <h1>Contact Us</h1>
-    <form action="">
+    <form action="" id="myForm">
 
       <div id="nome">
-        <div>
-          <label for="fNome">First Name</label>
-          <input type="text" name="fNome" id="fNome" required class="campos">
+        <div class="nomeEult">          
+          <div>
+            <label for="fNome">First Name</label>
+            <input type="text" name="fNome" id="fNome" class="campos">
+          </div>
+          <div class="error" id="pNome"></div>
         </div>
-        <!-- This field is required -->
         
-        <div>
-          <label for="lNome">Last Name</label>
-          <input type="text" name="lNome" id="lNome" required class="campos">
+        <div class="nomeEult">          
+          <div>
+            <label for="lNome">Last Name</label>
+            <input type="text" name="lNome" id="lNome" class="campos">
+          </div>
+          <div class="error" id="uNome"></div>
         </div>
-        <!-- This field is required -->
       </div>
-
-      <label for="Email">Email Address</label>
-      <input type="email" name="Email" id="Email" class="campos" required>
-      <!-- Please enter a valid email address
-      This field is required -->
       
-      <label>Query Type</label>
-      <div id="escolha" for="General">
-        <label class="escolha"> 
-          <input type="radio" name="queryType" id="General">
-          General Enquiry
-        </label>
-        <label class="escolha" for="Support">
-          <input type="radio" name="queryType" id="Support">
-          Support Request
-        </div>
+      <div id="divEmail">
+        <label for="Email">Email Address</label>
+        <input type="email" name="Email" id="Email" class="campos">
+        <div class="error" id="emailError"></div>
       </div>
-      <!-- Please select a query type -->   
-
+      
+      <label id="query">Query Type
+        <div id="escolha">
+          <label class="escolha"> 
+            <input type="radio" name="queryType" id="General">
+            General Enquiry
+          </label>
+          <label class="escolha"> 
+            <input type="radio" name="queryType" id="Support">
+            Support Request
+          </label>
+        </div>
+        <div id="escolhaERROR" class="error"></div>
+      </label>
       <label for="texto">Message</label>
       <textarea name="texto" id="texto" rows="4"></textarea>
-      <!-- This field is required -->
+      <div id="textoError" class="error"></div>
 
       <label for="check">
         <input type="checkbox" id="check">
         I consent to being contacted by the team
       </label>
+      <div id="checkError" class="error"></div>
       <!-- To submit this form, please consent to being contacted -->
 
-      <button>Submit</button>
+      <button type="submit">Submit</button>
 
     </form>
   </main>
