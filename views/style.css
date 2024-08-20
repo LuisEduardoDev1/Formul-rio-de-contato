@@ -136,3 +136,29 @@ textarea{
         width: 85%;
     }
 }
+@media(max-width: 450px){
+    body{
+        width: 90%;
+    }
+
+    #nome{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #escolha{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
+        width: 100%;
+        gap: 5px;
+    }
+    .escolha{
+        width: 100%;
+    }
+
+    textarea{
+        height: 120px;
+    }
+}

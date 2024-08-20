@@ -45,7 +45,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         isValid = false;
     }
 
-    const check = document.getElementById('check').value;
+    const check = document.getElementById('check');
     if (!check.checked) {
         document.getElementById('checkError').textContent = 'To submit this form, please consent to being contacted.';
         isValid = false;
